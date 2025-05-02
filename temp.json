@@ -1,0 +1,165 @@
+{
+    "albums": [
+        {
+            "id": "1",
+            "title": "Thriller",
+            "artist": "Michael Jackson",
+            "year": 1982,
+            "genre": "Pop",
+            "coverImage": "https://example.com/thriller.jpg",
+            "tracks": [
+                "Wanna Be Startin' Somethin'",
+                "Thriller",
+                "Beat It",
+                "Billie Jean",
+                "Human Nature",
+                "P.Y.T. (Pretty Young Thing)",
+                "The Lady in My Life"
+            ]
+        },
+        {
+            "id": "2",
+            "title": "The Dark Side of the Moon",
+            "artist": "Pink Floyd",
+            "year": 1973,
+            "genre": "Progressive Rock",
+            "coverImage": "https://example.com/darkside.jpg",
+            "tracks": [
+                "Speak to Me",
+                "Breathe",
+                "On the Run",
+                "Time",
+                "The Great Gig in the Sky",
+                "Money",
+                "Us and Them",
+                "Any Colour You Like",
+                "Brain Damage",
+                "Eclipse"
+            ]
+        },
+        {
+            "id": "3",
+            "title": "Abbey Road",
+            "artist": "The Beatles",
+            "year": 1969,
+            "genre": "Rock",
+            "coverImage": "https://example.com/abbeyroad.jpg",
+            "tracks": [
+                "Come Together",
+                "Something",
+                "Maxwell's Silver Hammer",
+                "Oh! Darling",
+                "Octopus's Garden",
+                "I Want You (She's So Heavy)",
+                "Here Comes the Sun",
+                "Because",
+                "You Never Give Me Your Money",
+                "Sun King",
+                "Mean Mr. Mustard",
+                "Polythene Pam",
+                "She Came In Through the Bathroom Window",
+                "Golden Slumbers",
+                "Carry That Weight",
+                "The End",
+                "Her Majesty"
+            ]
+        },
+        {
+            "id": "4",
+            "title": "Kind of Blue",
+            "artist": "Miles Davis",
+            "year": 1959,
+            "genre": "Jazz",
+            "coverImage": "https://example.com/kindofblue.jpg",
+            "tracks": [
+                "So What",
+                "Freddie Freeloader",
+                "Blue in Green",
+                "All Blues",
+                "Flamenco Sketches"
+            ]
+        },
+        {
+            "id": "5",
+            "title": "Nevermind",
+            "artist": "Nirvana",
+            "year": 1991,
+            "genre": "Grunge",
+            "coverImage": "https://example.com/nevermind.jpg",
+            "tracks": [
+                "Smells Like Teen Spirit",
+                "In Bloom",
+                "Come as You Are",
+                "Breed",
+                "Lithium",
+                "Polly",
+                "Territorial Pissings",
+                "Drain You",
+                "Lounge Act",
+                "Stay Away",
+                "On a Plain",
+                "Something in the Way"
+            ]
+        },
+        {
+            "id": "6",
+            "title": "Purple Rain",
+            "artist": "Prince",
+            "year": 1984,
+            "genre": "Pop/Rock",
+            "coverImage": "https://example.com/purplerain.jpg",
+            "tracks": [
+                "Let's Go Crazy",
+                "Take Me With U",
+                "The Beautiful Ones",
+                "Computer Blue",
+                "Darling Nikki",
+                "When Doves Cry",
+                "I Would Die 4 U",
+                "Baby I'm a Star",
+                "Purple Rain"
+            ]
+        },
+        {
+            "id": "7",
+            "title": "Illmatic",
+            "artist": "Nas",
+            "year": 1994,
+            "genre": "Hip Hop",
+            "coverImage": "https://example.com/illmatic.jpg",
+            "tracks": [
+                "The Genesis",
+                "N.Y. State of Mind",
+                "Life's a Bitch",
+                "The World Is Yours",
+                "Halftime",
+                "Memory Lane (Sittin' in da Park)",
+                "One Love",
+                "One Time 4 Your Mind",
+                "Represent",
+                "It Ain't Hard to Tell"
+            ]
+        },
+        {
+            "id": "8",
+            "title": "Back to Black",
+            "artist": "Amy Winehouse",
+            "year": 2006,
+            "genre": "Soul/R&B",
+            "coverImage": "https://example.com/backtoblack.jpg",
+            "tracks": [
+                "Rehab",
+                "You Know I'm No Good",
+                "Me & Mr Jones",
+                "Just Friends",
+                "Back to Black",
+                "Love Is a Losing Game",
+                "Tears Dry on Their Own",
+                "Wake Up Alone",
+                "Some Unholy War",
+                "He Can Only Hold Her",
+                "Addicted"
+            ]
+        }
+    ]
+}
