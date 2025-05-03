@@ -73,38 +73,38 @@ export default function App() {
   return (
     <SafeAreaView style={styles.container}>
       <StatusBar style="auto" />
-      <ScrollView style={styles.scrollView} contentContainerStyle={styles.scrollViewContent}>
-        {renderContent()}
-      </ScrollView>
-      <View style={styles.tabBar}>
-        <TouchableOpacity
-          style={[styles.tab, selectedTab === 'home' && styles.selectedTab]}
-          onPress={() => setSelectedTab('home')}
-        >
-          <Text style={[styles.tabIcon, selectedTab === 'home' && styles.selectedTabText]}>◯</Text>
-          <Text style={[styles.tabText, selectedTab === 'home' && styles.selectedTabText]}>Home</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.tab, selectedTab === 'search' && styles.selectedTab]}
-          onPress={() => setSelectedTab('search')}
-        >
-          <Text style={[styles.tabIcon, selectedTab === 'search' && styles.selectedTabText]}>□</Text>
-          <Text style={[styles.tabText, selectedTab === 'search' && styles.selectedTabText]}>Search</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.tab, selectedTab === 'activity' && styles.selectedTab]}
-          onPress={() => setSelectedTab('activity')}
-        >
-          <Text style={[styles.tabIcon, selectedTab === 'activity' && styles.selectedTabText]}>△</Text>
-          <Text style={[styles.tabText, selectedTab === 'activity' && styles.selectedTabText]}>Activity</Text>
-        </TouchableOpacity>
-        <TouchableOpacity
-          style={[styles.tab, selectedTab === 'profile' && styles.selectedTab]}
-          onPress={() => setSelectedTab('profile')}
-        >
-          <Text style={[styles.tabIcon, selectedTab === 'profile' && styles.selectedTabText]}>◇</Text>
-          <Text style={[styles.tabText, selectedTab === 'profile' && styles.selectedTabText]}>Profile</Text>
-        </TouchableOpacity>
+      {renderContent()}
+      <View style={styles.tabBarContainer}>
+        <View style={styles.tabBar}>
+          <TouchableOpacity
+            style={[styles.tab, selectedTab === 'home' && styles.selectedTab]}
+            onPress={() => setSelectedTab('home')}
+          >
+            <Text style={[styles.tabIcon, selectedTab === 'home' && styles.selectedTabText]}>◯</Text>
+            <Text style={[styles.tabText, selectedTab === 'home' && styles.selectedTabText]}>Home</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.tab, selectedTab === 'search' && styles.selectedTab]}
+            onPress={() => setSelectedTab('search')}
+          >
+            <Text style={[styles.tabIcon, selectedTab === 'search' && styles.selectedTabText]}>□</Text>
+            <Text style={[styles.tabText, selectedTab === 'search' && styles.selectedTabText]}>Search</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.tab, selectedTab === 'activity' && styles.selectedTab]}
+            onPress={() => setSelectedTab('activity')}
+          >
+            <Text style={[styles.tabIcon, selectedTab === 'activity' && styles.selectedTabText]}>△</Text>
+            <Text style={[styles.tabText, selectedTab === 'activity' && styles.selectedTabText]}>Activity</Text>
+          </TouchableOpacity>
+          <TouchableOpacity
+            style={[styles.tab, selectedTab === 'profile' && styles.selectedTab]}
+            onPress={() => setSelectedTab('profile')}
+          >
+            <Text style={[styles.tabIcon, selectedTab === 'profile' && styles.selectedTabText]}>◇</Text>
+            <Text style={[styles.tabText, selectedTab === 'profile' && styles.selectedTabText]}>Profile</Text>
+          </TouchableOpacity>
+        </View>
       </View>
     </SafeAreaView>
   );
@@ -115,11 +115,8 @@ const styles = StyleSheet.create({
     flex: 1,
     backgroundColor: '#1a237e',
   },
-  scrollView: {
+  contentWrapper: {
     flex: 1,
-  },
-  scrollViewContent: {
-    flexGrow: 1,
   },
   contentContainer: {
     flex: 1,
@@ -139,7 +136,7 @@ const styles = StyleSheet.create({
     marginBottom: 20,
   },
   searchContainer: {
-    marginTop: 20,
+    marginTop: 26,
   },
   searchInput: {
     backgroundColor: '#000000',
@@ -260,28 +257,39 @@ const styles = StyleSheet.create({
     fontSize: 16,
     fontWeight: '600',
   },
-  tabBar: {
-    flexDirection: 'row',
+  tabBarContainer: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: '#1a237e',
     borderTopWidth: 1,
     borderTopColor: '#303f9f',
-    backgroundColor: '#1a237e',
+    paddingBottom: 20,
+  },
+  tabBar: {
+    flexDirection: 'row',
+    height: 60,
+    paddingTop: 8,
   },
   tab: {
     flex: 1,
-    paddingVertical: 16,
     alignItems: 'center',
-  },
-  tabIcon: {
-    fontSize: 20,
-    marginBottom: 4,
-    color: '#ffffff',
+    justifyContent: 'center',
+    paddingTop: 4,
   },
   selectedTab: {
     backgroundColor: '#303f9f',
   },
+  tabIcon: {
+    fontSize: 24,
+    marginBottom: 2,
+    color: '#ffffff',
+  },
   tabText: {
-    fontSize: 14,
+    fontSize: 12,
     color: '#b3e5fc',
+    marginTop: 2,
   },
   selectedTabText: {
     color: '#ffffff',
