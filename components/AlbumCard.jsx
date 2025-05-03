@@ -1,22 +1,32 @@
-import React from 'react';
-import { View, Image, Text, StyleSheet } from 'react-native';
+import React, { useState } from 'react';
+import { View, Image, Text, StyleSheet, Pressable } from 'react-native';
 
 const AlbumCard = ({ coverImage, title }) => {
+  const [isPressed, setIsPressed] = useState(false);
+
   return (
-    <View style={styles.card}>
+    <Pressable
+      onPressIn={() => setIsPressed(true)}
+      onPressOut={() => setIsPressed(false)}
+      style={styles.card}
+    >
       <Image 
         source={{ uri: coverImage }} 
         style={styles.coverImage}
       />
-      <Text style={styles.title} numberOfLines={2}>{title}</Text>
-    </View>
+      {isPressed && (
+        <View style={styles.titleContainer}>
+          <Text style={styles.title} numberOfLines={2}>{title}</Text>
+        </View>
+      )}
+    </Pressable>
   );
 };
 
 const styles = StyleSheet.create({
   card: {
-    width: 150,
-    height: 180,
+    width: 160,
+    height: 160,
     margin: 8,
     borderRadius: 8,
     overflow: 'hidden',
@@ -32,14 +42,21 @@ const styles = StyleSheet.create({
   },
   coverImage: {
     width: '100%',
-    height: 150,
+    height: '100%',
     resizeMode: 'cover',
+  },
+  titleContainer: {
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.7)',
+    padding: 8,
   },
   title: {
     color: '#ffffff',
     fontSize: 14,
     fontWeight: '500',
-    padding: 8,
     textAlign: 'center',
   }
 });
