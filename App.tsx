@@ -56,7 +56,7 @@ export default function App() {
             <Ionicons 
               name={selectedTab === 'home' ? 'home' : 'home-outline'} 
               size={24} 
-              color={selectedTab === 'home' ? '#ffffff' : '#b3e5fc'} 
+              color={selectedTab === 'home' ? '#ffffff' : '#ffffff'} 
             />
             <Text style={[styles.tabText, selectedTab === 'home' && styles.selectedTabText]}>Home</Text>
           </TouchableOpacity>
@@ -67,7 +67,7 @@ export default function App() {
             <Ionicons 
               name={selectedTab === 'search' ? 'search' : 'search-outline'} 
               size={24} 
-              color={selectedTab === 'search' ? '#ffffff' : '#b3e5fc'} 
+              color={selectedTab === 'search' ? '#ffffff' : '#ffffff'} 
             />
             <Text style={[styles.tabText, selectedTab === 'search' && styles.selectedTabText]}>Search</Text>
           </TouchableOpacity>
@@ -78,7 +78,7 @@ export default function App() {
             <Ionicons 
               name={selectedTab === 'activity' ? 'notifications' : 'notifications-outline'} 
               size={24} 
-              color={selectedTab === 'activity' ? '#ffffff' : '#b3e5fc'} 
+              color={selectedTab === 'activity' ? '#ffffff' : '#ffffff'} 
             />
             <Text style={[styles.tabText, selectedTab === 'activity' && styles.selectedTabText]}>Activity</Text>
           </TouchableOpacity>
@@ -89,7 +89,7 @@ export default function App() {
             <Ionicons 
               name={selectedTab === 'profile' ? 'person' : 'person-outline'} 
               size={24} 
-              color={selectedTab === 'profile' ? '#ffffff' : '#b3e5fc'} 
+              color={selectedTab === 'profile' ? '#ffffff' : '#ffffff'} 
             />
             <Text style={[styles.tabText, selectedTab === 'profile' && styles.selectedTabText]}>Profile</Text>
           </TouchableOpacity>
