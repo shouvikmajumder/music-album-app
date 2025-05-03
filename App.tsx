@@ -2,6 +2,7 @@ import React from 'react';
 import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, SafeAreaView, Animated, TextInput } from 'react-native';
 import { useState, useRef, useEffect } from 'react';
+import { Ionicons } from '@expo/vector-icons';
 import Homepage from './frontend/Homepage';
 import Profile from './frontend/Profile';
 import Search from './frontend/Search';
@@ -52,28 +53,44 @@ export default function App() {
             style={[styles.tab, selectedTab === 'home' && styles.selectedTab]}
             onPress={() => setSelectedTab('home')}
           >
-            <Text style={[styles.tabIcon, selectedTab === 'home' && styles.selectedTabText]}>◯</Text>
+            <Ionicons 
+              name={selectedTab === 'home' ? 'home' : 'home-outline'} 
+              size={24} 
+              color={selectedTab === 'home' ? '#ffffff' : '#b3e5fc'} 
+            />
             <Text style={[styles.tabText, selectedTab === 'home' && styles.selectedTabText]}>Home</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.tab, selectedTab === 'search' && styles.selectedTab]}
             onPress={() => setSelectedTab('search')}
           >
-            <Text style={[styles.tabIcon, selectedTab === 'search' && styles.selectedTabText]}>□</Text>
+            <Ionicons 
+              name={selectedTab === 'search' ? 'search' : 'search-outline'} 
+              size={24} 
+              color={selectedTab === 'search' ? '#ffffff' : '#b3e5fc'} 
+            />
             <Text style={[styles.tabText, selectedTab === 'search' && styles.selectedTabText]}>Search</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.tab, selectedTab === 'activity' && styles.selectedTab]}
             onPress={() => setSelectedTab('activity')}
           >
-            <Text style={[styles.tabIcon, selectedTab === 'activity' && styles.selectedTabText]}>△</Text>
+            <Ionicons 
+              name={selectedTab === 'activity' ? 'notifications' : 'notifications-outline'} 
+              size={24} 
+              color={selectedTab === 'activity' ? '#ffffff' : '#b3e5fc'} 
+            />
             <Text style={[styles.tabText, selectedTab === 'activity' && styles.selectedTabText]}>Activity</Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.tab, selectedTab === 'profile' && styles.selectedTab]}
             onPress={() => setSelectedTab('profile')}
           >
-            <Text style={[styles.tabIcon, selectedTab === 'profile' && styles.selectedTabText]}>◇</Text>
+            <Ionicons 
+              name={selectedTab === 'profile' ? 'person' : 'person-outline'} 
+              size={24} 
+              color={selectedTab === 'profile' ? '#ffffff' : '#b3e5fc'} 
+            />
             <Text style={[styles.tabText, selectedTab === 'profile' && styles.selectedTabText]}>Profile</Text>
           </TouchableOpacity>
         </View>
@@ -234,7 +251,7 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: '#1a237e',
+    backgroundColor: '#000000',
     borderTopWidth: 1,
     borderTopColor: '#303f9f',
     paddingBottom: 20,
@@ -251,7 +268,7 @@ const styles = StyleSheet.create({
     paddingTop: 4,
   },
   selectedTab: {
-    backgroundColor: '#303f9f',
+    backgroundColor: '#333333',
   },
   tabIcon: {
     fontSize: 24,

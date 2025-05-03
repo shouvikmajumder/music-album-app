@@ -1,5 +1,6 @@
 import React from 'react';
 import { View, StyleSheet, FlatList, Text } from 'react-native';
+import { Ionicons } from '@expo/vector-icons';
 import AlbumCard from "../components/AlbumCard";
 import albumData from '../temp.json';
 
@@ -15,7 +16,9 @@ const Homepage = () => {
     return (
         <View style={styles.container}>
             <View style={styles.header}>
-                <Text style={styles.headerTitle}>Soundbox</Text>
+                <Text style={styles.headerTitle}>
+                    <Ionicons name="musical-notes" size={32} color="#ffffff" style={styles.musicIcon} /> Soundbox
+                </Text>
             </View>
             <FlatList
                 data={albumData.albums}
@@ -23,6 +26,7 @@ const Homepage = () => {
                 keyExtractor={item => item.id}
                 numColumns={2}
                 contentContainerStyle={styles.listContainer}
+                columnWrapperStyle={styles.columnWrapper}
             />
         </View>
     );
@@ -34,9 +38,9 @@ const styles = StyleSheet.create({
         backgroundColor: '#1a237e', // Matching the dark blue theme
     },
     header: {
-        padding: 20,
-        paddingTop: 10,
-        paddingBottom: 10,
+        padding: 5,
+        paddingTop: 0,
+        paddingBottom: 4,
         borderBottomWidth: 1,
         borderBottomColor: '#303f9f',
         alignItems: 'center',
@@ -47,9 +51,19 @@ const styles = StyleSheet.create({
         fontWeight: 'bold',
         color: '#ffffff',
         textAlign: 'center',
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    musicIcon: {
+        marginRight: 8,
     },
     listContainer: {
         padding: 10,
+        flexGrow: 1,
+    },
+    columnWrapper: {
+        justifyContent: 'center',
+        gap: 16,
     }
 });
 
