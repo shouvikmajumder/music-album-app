@@ -3,6 +3,8 @@ import { StatusBar } from 'expo-status-bar';
 import { StyleSheet, Text, View, TouchableOpacity, ScrollView, SafeAreaView, Animated, TextInput } from 'react-native';
 import { useState, useRef, useEffect } from 'react';
 import Homepage from './frontend/Homepage';
+import Profile from './frontend/Profile';
+import Search from './frontend/Search';
 
 export default function App() {
   const [selectedTab, setSelectedTab] = useState('home');
@@ -28,43 +30,13 @@ export default function App() {
       case 'search':
         return (
           <Animated.View style={[styles.contentContainer, { opacity: fadeAnim }]}>
-            <Text style={styles.title}>Search 🔍</Text>
-            <View style={styles.searchContainer}>
-              <TextInput
-                style={styles.searchInput}
-                placeholder="Search anything..."
-                value={searchQuery}
-                onChangeText={setSearchQuery}
-                placeholderTextColor="#999"
-              />
-              <View style={styles.searchResults}>
-                {searchQuery ? (
-                  <Text style={styles.searchResultsText}>
-                    Search results for: {searchQuery}
-                  </Text>
-                ) : (
-                  <Text style={styles.searchPlaceholder}>
-                    Start typing to search...
-                  </Text>
-                )}
-              </View>
-            </View>
+            <Search />
           </Animated.View>
         );
       case 'profile':
         return (
           <Animated.View style={[styles.contentContainer, { opacity: fadeAnim }]}>
-            <Text style={styles.title}>Profile 👤</Text>
-            <View style={styles.profileCard}>
-              <View style={styles.avatarPlaceholder} />
-              <Text style={styles.profileName}>John Doe</Text>
-              <Text style={styles.profileBio}>
-                Mobile App Developer
-              </Text>
-              <TouchableOpacity style={styles.editButton}>
-                <Text style={styles.editButtonText}>Edit Profile</Text>
-              </TouchableOpacity>
-            </View>
+            <Profile />
           </Animated.View>
         );
     }
