@@ -35,14 +35,14 @@ const Homepage = () => {
 const styles = StyleSheet.create({
     container: {
         flex: 1,
-        backgroundColor: '#1a237e', // Matching the dark blue theme
+        backgroundColor: '#2D1B69', // Dark purple background
     },
     header: {
         padding: 5,
         paddingTop: 0,
         paddingBottom: 4,
         borderBottomWidth: 1,
-        borderBottomColor: '#303f9f',
+        borderBottomColor: '#4A2B8C', // Lighter purple border
         alignItems: 'center',
         justifyContent: 'center',
     },
@@ -58,12 +58,12 @@ const styles = StyleSheet.create({
         marginRight: 8,
     },
     listContainer: {
-        padding: 10,
+        padding: 5,
         flexGrow: 1,
     },
     columnWrapper: {
         justifyContent: 'center',
-        gap: 16,
+        gap: 8,
     }
 });
 

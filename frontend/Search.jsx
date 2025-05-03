@@ -20,18 +20,36 @@ const Search = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a237e',
+    backgroundColor: '#2D1B69',
     padding: 12,
     paddingTop: 14,
   },
+  searchContainer: {
+    marginTop: 26,
+  },
   searchInput: {
-    backgroundColor: '#000000',
+    backgroundColor: '#1A1033',
     height: 38,
-    borderRadius: 6,
-    paddingHorizontal: 12,
+    borderRadius: 12,
+    padding: 16,
     color: '#ffffff',
-    fontSize: 15,
-    borderWidth: 0,
+    fontSize: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  searchResults: {
+    marginTop: 20,
+    backgroundColor: '#1A1033',
+    borderRadius: 12,
+    padding: 16,
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
   },
 });
 

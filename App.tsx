@@ -102,7 +102,7 @@ export default function App() {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a237e',
+    backgroundColor: '#2D1B69',
   },
   contentWrapper: {
     flex: 1,
@@ -251,9 +251,9 @@ const styles = StyleSheet.create({
     bottom: 0,
     left: 0,
     right: 0,
-    backgroundColor: '#000000',
+    backgroundColor: '#1A1033',
     borderTopWidth: 1,
-    borderTopColor: '#303f9f',
+    borderTopColor: '#4A2B8C',
     paddingBottom: 20,
   },
   tabBar: {

@@ -7,24 +7,24 @@ const Profile = () => {
       {/* Profile Header */}
       <View style={styles.header}>
         <View style={styles.profileImage}>
-          <Text style={styles.profileInitials}>JD</Text>
+          <Text style={styles.profileInitials}>SM</Text>
         </View>
-        <Text style={styles.username}>John Doe</Text>
-        <Text style={styles.bio}>Music enthusiast & collector</Text>
+        <Text style={styles.username}>Shomo</Text>
+        <Text style={styles.bio}>Retarded</Text>
       </View>
 
       {/* Stats Section */}
       <View style={styles.statsContainer}>
         <View style={styles.statItem}>
-          <Text style={styles.statNumber}>248</Text>
+          <Text style={styles.statNumber}>35</Text>
           <Text style={styles.statLabel}>Albums</Text>
         </View>
         <View style={styles.statItem}>
-          <Text style={styles.statNumber}>1.2k</Text>
+          <Text style={styles.statNumber}>100</Text>
           <Text style={styles.statLabel}>Followers</Text>
         </View>
         <View style={styles.statItem}>
-          <Text style={styles.statNumber}>856</Text>
+          <Text style={styles.statNumber}>352</Text>
           <Text style={styles.statLabel}>Following</Text>
         </View>
       </View>
@@ -69,7 +69,9 @@ const Profile = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: '#1a237e',
+    backgroundColor: '#2D1B69',
+    padding: 12,
+    paddingTop: 14,
   },
   header: {
     alignItems: 'center',
@@ -131,7 +133,7 @@ const styles = StyleSheet.create({
     gap: 12,
   },
   editButton: {
-    backgroundColor: '#303f9f',
+    backgroundColor: '#4A2B8C',
     paddingHorizontal: 24,
     paddingVertical: 12,
     borderRadius: 8,
@@ -188,6 +190,35 @@ const styles = StyleSheet.create({
     paddingVertical: 8,
     borderRadius: 20,
     fontSize: 14,
+  },
+  profileCard: {
+    backgroundColor: '#1A1033',
+    borderRadius: 12,
+    padding: 20,
+    alignItems: 'center',
+    shadowColor: '#000',
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.1,
+    shadowRadius: 8,
+    elevation: 3,
+  },
+  avatarPlaceholder: {
+    width: 100,
+    height: 100,
+    borderRadius: 50,
+    backgroundColor: '#4A2B8C',
+    marginBottom: 16,
+  },
+  profileName: {
+    fontSize: 24,
+    fontWeight: 'bold',
+    color: '#ffffff',
+    marginBottom: 8,
+  },
+  profileBio: {
+    fontSize: 16,
+    color: '#b3e5fc',
+    marginBottom: 20,
   },
 });
 
