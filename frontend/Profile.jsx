@@ -51,17 +51,6 @@ const Profile = () => {
           <Text style={styles.activityTime}>5 hours ago</Text>
         </View>
       </View>
-
-      {/* Favorite Genres */}
-      <View style={styles.section}>
-        <Text style={styles.sectionTitle}>Favorite Genres</Text>
-        <View style={styles.genreContainer}>
-          <Text style={styles.genreTag}>Hip Hop</Text>
-          <Text style={styles.genreTag}>R&B</Text>
-          <Text style={styles.genreTag}>Rock</Text>
-          <Text style={styles.genreTag}>Jazz</Text>
-        </View>
-      </View>
     </ScrollView>
   );
 };

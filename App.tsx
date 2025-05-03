@@ -259,7 +259,7 @@ const styles = StyleSheet.create({
   tabBar: {
     flexDirection: 'row',
     height: 60,
-    paddingTop: 8,
+    paddingTop: 18,
   },
   tab: {
     flex: 1,
