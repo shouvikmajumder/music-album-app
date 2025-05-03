@@ -55,21 +55,21 @@ export default function App() {
           >
             <Ionicons 
               name={selectedTab === 'home' ? 'home' : 'home-outline'} 
-              size={24} 
+              size={26} 
               color={selectedTab === 'home' ? '#ffffff' : '#ffffff'} 
             />
-            <Text style={[styles.tabText, selectedTab === 'home' && styles.selectedTabText]}>Home</Text>
+            <Text style={[styles.tabText, selectedTab === 'home' && styles.selectedTabText]}></Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.tab, selectedTab === 'search' && styles.selectedTab]}
             onPress={() => setSelectedTab('search')}
           >
             <Ionicons 
-              name={selectedTab === 'search' ? 'search' : 'search-outline'} 
-              size={24} 
+              name={selectedTab === 'search' ? 'search-sharp' : 'search-outline'} 
+              size={28} 
               color={selectedTab === 'search' ? '#ffffff' : '#ffffff'} 
             />
-            <Text style={[styles.tabText, selectedTab === 'search' && styles.selectedTabText]}>Search</Text>
+            <Text style={[styles.tabText, selectedTab === 'search' && styles.selectedTabText]}></Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.tab, selectedTab === 'activity' && styles.selectedTab]}
@@ -77,10 +77,10 @@ export default function App() {
           >
             <Ionicons 
               name={selectedTab === 'activity' ? 'notifications' : 'notifications-outline'} 
-              size={24} 
+              size={26} 
               color={selectedTab === 'activity' ? '#ffffff' : '#ffffff'} 
             />
-            <Text style={[styles.tabText, selectedTab === 'activity' && styles.selectedTabText]}>Activity</Text>
+            <Text style={[styles.tabText, selectedTab === 'activity' && styles.selectedTabText]}></Text>
           </TouchableOpacity>
           <TouchableOpacity
             style={[styles.tab, selectedTab === 'profile' && styles.selectedTab]}
@@ -88,10 +88,10 @@ export default function App() {
           >
             <Ionicons 
               name={selectedTab === 'profile' ? 'person' : 'person-outline'} 
-              size={24} 
+              size={26} 
               color={selectedTab === 'profile' ? '#ffffff' : '#ffffff'} 
             />
-            <Text style={[styles.tabText, selectedTab === 'profile' && styles.selectedTabText]}>Profile</Text>
+            <Text style={[styles.tabText, selectedTab === 'profile' && styles.selectedTabText]}></Text>
           </TouchableOpacity>
         </View>
       </View>
@@ -268,12 +268,7 @@ const styles = StyleSheet.create({
     paddingTop: 4,
   },
   selectedTab: {
-    backgroundColor: '#333333',
-  },
-  tabIcon: {
-    fontSize: 24,
-    marginBottom: 2,
-    color: '#ffffff',
+    // backgroundColor: '#333333',
   },
   tabText: {
     fontSize: 12,
