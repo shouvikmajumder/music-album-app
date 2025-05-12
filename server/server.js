@@ -4,7 +4,7 @@ import fs from 'fs';
 import path from 'path';
 import dotenv from 'dotenv';
 import connectDB from './db.js';
-import Album from './dbSchema.js';
+// import Album from './dbSchema.js';
 
 // Load environment variables
 dotenv.config();

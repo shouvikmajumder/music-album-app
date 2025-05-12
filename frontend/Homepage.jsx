@@ -3,6 +3,8 @@ import { View, StyleSheet, FlatList, Text, ScrollView } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
 import AlbumCard from "../components/AlbumCard";
 import albumData from '../temp.json';
+import Logo from '../components/Logo';
+
 
 const Homepage = () => {
     const renderItem = ({ item }) => (
@@ -26,9 +28,7 @@ const Homepage = () => {
     return (
         <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
             <View style={styles.header}>
-                <Text style={styles.headerTitle}>
-                     Soundbox
-                </Text>
+                <Logo />
             </View>
             
             {/* Horizontal Scroll Section */}
@@ -98,22 +98,11 @@ const styles = StyleSheet.create({
     header: {
         padding: 5,
         paddingTop: 0,
-        paddingBottom: 4,
+        paddingBottom: 0,
         borderBottomWidth: 1,
         borderBottomColor: '#4A2B8C', // Lighter purple border
         alignItems: 'center',
         justifyContent: 'center',
-    },
-    headerTitle: {
-        fontSize: 32,
-        fontWeight: 'bold',
-        color: '#ffffff',
-        textAlign: 'center',
-        flexDirection: 'row',
-        alignItems: 'center',
-    },
-    musicIcon: {
-        marginRight: 8,
     },
     horizontalSection: {
         marginVertical: 10,
