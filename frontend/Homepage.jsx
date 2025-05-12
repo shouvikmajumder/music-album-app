@@ -27,7 +27,7 @@ const Homepage = () => {
         <ScrollView style={styles.container} showsVerticalScrollIndicator={false}>
             <View style={styles.header}>
                 <Text style={styles.headerTitle}>
-                    <Ionicons name="musical-notes" size={32} color="#ffffff" style={styles.musicIcon} /> Soundbox
+                     Soundbox
                 </Text>
             </View>
             
